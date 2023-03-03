@@ -4,6 +4,7 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P15, joystickbit.ButtonType
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType.down, function () {
     radio.sendNumber(5)
 })
+basic.showIcon(IconNames.Yes)
 joystickbit.initJoystickBit()
 radio.setGroup(20)
 basic.forever(function () {
